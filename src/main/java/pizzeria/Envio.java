@@ -14,7 +14,7 @@ import java.util.Random;
  */
 public class Envio {
     //La clase envío será un sigleton
-    private static Envio envio = null; 
+    private static Envio envio = new Envio(); 
     private String[] pizzeros = {"Pepe", "Jose" , "Juan", "Juanillo", "Alberto"};
     private String repartidor;
 
@@ -22,11 +22,7 @@ public class Envio {
         Random r = new Random();
         repartidor = pizzeros[r.nextInt(pizzeros.length)];
     }
-    private static void nuevoEnvio(){
-        envio = new Envio();
-    }
     public static Envio getInstance(){
-        if (envio == null) nuevoEnvio();
         return envio;
     }
 
