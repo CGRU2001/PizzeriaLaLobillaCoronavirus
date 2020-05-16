@@ -62,7 +62,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "El cliente " + this.nombreCliente + " con dirección " + this.direccion + " tiene el pedido " ;
+        return "El cliente " + this.nombreCliente + " con dirección " + this.direccion + " tiene el pedido " + pedido.getReferencia();
     }
     
     
