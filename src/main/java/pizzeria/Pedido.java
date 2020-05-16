@@ -28,8 +28,12 @@ public class Pedido {
     
     public void nuevoArticulo(Articulos a){
         this.articulosComanda.add(a);
+        this.calcularPrecio(a);
     }
 
+    private void calcularPrecio(Articulos a){
+        this.subtotal += a.getPrecioArticulo();
+    }
     
 
     @Override
