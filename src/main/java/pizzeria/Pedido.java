@@ -34,6 +34,38 @@ public class Pedido {
     private void calcularPrecio(Articulos a){
         this.subtotal += a.getPrecioArticulo();
     }
+
+    public String getReferencia() {
+        return referencia;
+    }
+
+    public void setReferencia(String referencia) {
+        this.referencia = referencia;
+    }
+
+    public ArrayList<Articulos> getArticulosComanda() {
+        return articulosComanda;
+    }
+
+    public void setArticulosComanda(ArrayList<Articulos> articulosComanda) {
+        this.articulosComanda = articulosComanda;
+    }
+
+    public double getSubtotal() {
+        return subtotal;
+    }
+
+    public void setSubtotal(double subtotal) {
+        this.subtotal = subtotal;
+    }
+
+    public String getRepartidor() {
+        return repartidor;
+    }
+
+    public void setRepartidor(String repartidor) {
+        this.repartidor = repartidor;
+    }
     
 
     @Override
