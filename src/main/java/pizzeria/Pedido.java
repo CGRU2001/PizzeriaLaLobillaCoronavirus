@@ -70,8 +70,10 @@ public class Pedido {
 
     @Override
     public String toString() {
-        return "Pedido{" + "referencia=" + referencia + ", articulosComanda=" + articulosComanda + ", subtotal=" + subtotal + ", repartidor=" + repartidor + '}';
+        String contenido = "";
+        for (int i = 0; i < articulosComanda.size(); i++) {
+            contenido += articulosComanda.get(i) + ", ";
+        }
+        return ("El pedido contiene: "  + contenido);
     }
-    
-    
 }
