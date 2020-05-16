@@ -22,7 +22,11 @@ public class Envio {
         Random r = new Random();
         repartidor = pizzeros[r.nextInt(pizzeros.length)];
     }
+    private static void nuevoEnvio(){
+        envio = new Envio();
+    }
     public static Envio getInstance(){
+        if (envio == null) nuevoEnvio();
         return envio;
     }
 
