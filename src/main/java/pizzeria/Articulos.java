@@ -48,7 +48,7 @@ public enum Articulos {
 
     @Override
     public String toString() {
-        return this.getNombreArticulo() + ", que cuesta " + this.getPrecioArticulo() + "€";
+        return this.getNombreArticulo() + " (que cuesta " + this.getPrecioArticulo() + "€)";
     }
     
     
