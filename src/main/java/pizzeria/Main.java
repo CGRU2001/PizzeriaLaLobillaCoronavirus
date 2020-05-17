@@ -57,7 +57,7 @@ public class Main {
             switch (sel) {
                 case 1:
                     c.getPedido().nuevoArticulo(Articulos.PIZZA_BASE);
-                    System.out.println("Has añadido a tu cesta el artículo " + Articulos.PIZZA_BASE.getNombreArticulo() + " La cuenta asciende a " + c.getPedido().getSubtotal() + "€");
+                    System.out.println("Has añadido a tu cesta el artículo " + Articulos.PIZZA_BASE.getNombreArticulo() + ". La cuenta asciende a " + c.getPedido().getSubtotal() + "€");
                     break;
                 case 2:
                     c.getPedido().nuevoArticulo(Articulos.PIZZA_LOBILLA);
@@ -116,7 +116,7 @@ public class Main {
         } while (addElement);
         System.out.println(c.getPedido().toString());
         System.out.println("El repartidor asignado es " + c.getPedido().getRepartidor());
-        System.out.println("Le recordamos que el subtotal el " + c.getPedido().getSubtotal() +"€";
+        System.out.println("Le recordamos que el subtotal el " + c.getPedido().getSubtotal() +"€");
         System.out.println("¡Buen provecho! disfrute de su comida, y recuerde, #YoMeQuedoEnCasa");
     }
 }
