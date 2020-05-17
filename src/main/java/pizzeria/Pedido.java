@@ -72,8 +72,8 @@ public class Pedido {
     public String toString() {
         String contenido = "";
         for (int i = 0; i < articulosComanda.size(); i++) {
-            contenido += articulosComanda.get(i) + ", ";
+            contenido += "- "+ articulosComanda.get(i);
         }
-        return ("El pedido contiene: "  + contenido);
+        return ("El pedido contiene: \n"  + contenido);
     }
 }
